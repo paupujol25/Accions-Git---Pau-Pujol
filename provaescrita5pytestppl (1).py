@@ -9,7 +9,7 @@ def setup_biblioteca():
     """
     return [
         {
-            "llibre": "El Quixot",
+            "llibre": "El Quixot", 
             "autor": "Cervantes",
             "categoria": "novel·la",
             "prestecs": [
@@ -90,7 +90,7 @@ def test_usuari_te_prestecs(usuari, esperat):
     assert usuari_te_prestecs(biblioteca, usuari) == esperat
 
 @pytest.mark.parametrize("llibre, esperat", [
-    ("El Quixot", 47),
+    ("El Quixot", 999),
     ("1984", 53),
     ("El Senyor dels Anells", 67),
     ("Crim i Càstig", 63)
